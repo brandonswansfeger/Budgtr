@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 8000;
+app.set("view engine", "ejs");
+
 // =======================================
 //              DATABASE
 // =======================================
@@ -13,10 +15,13 @@ app.use(express.static('public'));
 // =======================================
 // index route
 app.get('/budget/', (req, res) => {
-  res.render("index.ejs"); 
+  res.render("index.ejs");
 });
 
 // show route
+app.get('/budget/new/', (req, res) => {
+  res.render("new.ejs");
+});    
 
 
 app.get('/budget/:id', (req, res) => {
@@ -25,8 +30,8 @@ app.get('/budget/:id', (req, res) => {
   });
 });
     // allBudget[req.params.name] ), {
-    
-    
+// New route
+
 
   
 

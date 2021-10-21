@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/normalize.css" />
-    <link rel="stylesheet" href="/public/skeleton.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet/CSS" src="/public/style.css" />
+    <title>New</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <form action="/budget" method="POST">
+            <div class="six-columns">
+                <div>
+                <input class="u-full-width" type="Date" value="" name="date" placeholder="Date" />
+            </div>
+            <div>
+                <input class="u-full-width" type="text" value="" name="name" placeholder="Name" />
+            </div>
+            <div>
+                <input class="u-full-width" type="text" value="" name="date" placeholder="Amount (USD)" />
+            </div>
+            <div>
+                <input class="u-full-width" type="text" value="" name="from" placeholder="From" />
+            </div>
+            <div>
+                <input class="u-full-width" type="text" value="" name="tags" placeholder="Tags" />
+            </div>
+        </div>
+    </form>
+            <button class="button-primary" type="submit">Submit</button>
+    </div>
+
+
+
+    </form>
+
 </body>
+
 </html>
