@@ -13,7 +13,7 @@ app.use(express.static('public'));
 // =======================================
 // index route
 app.get('/budget/', (req, res) => {
-  res.send(budget);
+  res.render("index.ejs"); 
 });
 
 // show route
