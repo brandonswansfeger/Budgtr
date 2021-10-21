@@ -11,32 +11,21 @@
 </head>
 
 <body>
-    <div class="container">
-        <form action="/budget" method="POST">
-            <div class="six-columns">
-                <div>
-                <input class="u-full-width" type="Date" value="" name="date" placeholder="Date" />
-            </div>
-            <div>
-                <input class="u-full-width" type="text" value="" name="name" placeholder="Name" />
-            </div>
-            <div>
-                <input class="u-full-width" type="text" value="" name="date" placeholder="Amount (USD)" />
-            </div>
-            <div>
-                <input class="u-full-width" type="text" value="" name="from" placeholder="From" />
-            </div>
-            <div>
-                <input class="u-full-width" type="text" value="" name="tags" placeholder="Tags" />
-            </div>
-        </div>
-    </form>
-            <button class="button-primary" type="submit">Submit</button>
-    </div>
-
-
-
-    </form>
+          <form action="/budget/" method="POST">
+          
+                <input class="u-full-width" type="Date" name="date" placeholder="Date" />
+            
+                <input class="u-full-width" type="text" name="name" placeholder="Name" />
+          
+                <input class="u-full-width" type="text" name="date" placeholder="Amount (USD)" />
+         
+                <input class="u-full-width" type="text" name="from" placeholder="From" />
+      
+                <input class="u-full-width" type="text" name="tags" placeholder="Tags" />
+           
+                 <input type="submit" value="Add Budget Item" onsubmit="setTimeout(function(){window.location.reload();},5);" />
+           
+        </form>
 
 </body>
 
