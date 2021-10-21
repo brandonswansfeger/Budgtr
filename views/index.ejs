@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/normalize.css" />
     <link rel="stylesheet" href="/public/skeleton.css" />
-    <title>Document</title>
+    <title>Budget Page</title>
 </head>
 <body>
     <div class="container">
 <h1>
-    Budgtr ALL
+    <table style="font-size: small">
+        <h1>Budget</h1>
+        <% for(let i = 0; i < allBudget.length; i++){ %>
+         <tr>
+          <td><%=allBudget[i].date %></td>
+          <td><a href="/budget/<%=i%>"><%=allBudget[i].name %></td></a></td>
+          <td><%=allBudget[i].amount; %></td>
+        </tr>
+        <% } %>
+    </table>
 </h1>
 
     </div>
