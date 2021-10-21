@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,16 @@
     <link rel="stylesheet" href="/public/skeleton.css" />
     <title>Budgtr App</title>
 </head>
+<% { %>
+
 <body>
-    <h1>Budget show page</h1>
+    <div class="container">
+        <h1><%=allBudget.name %></h1>
+        <pre><h2>Date:    <%=allBudget.date %></h2></pre>
+        <pre><H2>Amount:  <%=allBudget.amount %>.00 (USD)</H2></pre>
+        <button class="button-primary" onclick="location.href='http://localhost:3000/budget/'">Back</button>
+    </div>
 </body>
+<% } %>
+
 </html>

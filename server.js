@@ -17,9 +17,18 @@ app.get('/budget/', (req, res) => {
 });
 
 // show route
+
+
 app.get('/budget/:id', (req, res) => {
-  res.send(budget[req.params.id]);
+  res.render('show.ejs', {
+    allBudget: allBudget[req.params.id],
+  });
 });
+    // allBudget[req.params.name] ), {
+    
+    
+
+  
 
 // =======================================
 //              LISTENER
