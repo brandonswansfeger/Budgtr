@@ -71,3 +71,7 @@ module.exports = allBudget =  [
     },
   ]
 
+let result = allBudget.map(a => a.amount);
+bankAccount = eval(result.join("+"));
+
+  module.exports = allBudget

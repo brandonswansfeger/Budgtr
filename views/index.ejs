@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet/CSS" src="/public/style.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>Budget Page</title>
 </head>
 
 <body>
     <div class="container">
+        <%{%>
         <h2>Income & Expenses</h2>
-        <nav>
+        <p>Account Balance: </p>
+       <p id='account'><%=bankAccount%></p>
+       <%}%>
+           <nav>
             <a href="/budget/new">Create a New Expense Itemn</a>
           </nav>
         <table class="u-full-width">
@@ -38,6 +43,14 @@
 
 
      </div>
-</body>
+
+    
+    
+    </body>
+
+    <script>
+
+</script>
+
 
 </html>

@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 8000;
+
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 // =======================================
@@ -13,6 +14,8 @@ app.use((req, res, next) => {
   next();
 });
 
+let result = allBudget.map(a => a.amount);
+const bankAccount = eval(result.join("+"));
 
 // =======================================
 //              ROUTES
@@ -22,15 +25,25 @@ app.get('/budget/', (req, res) => {
   res.render("index.ejs");
 });
 
+
 app.post("/budget", (req, res) => {
   budget.push(req.body);
   res.redirect("/budget");
 });
 
 
+
+console.log(result);
+
+
+
 app.get('/budget/new/', (req, res) => {
   res.render("new.ejs");
 });    
+
+
+
+
 
 app.get('/budget/:id', (req, res) => {
   res.render('show.ejs', {
